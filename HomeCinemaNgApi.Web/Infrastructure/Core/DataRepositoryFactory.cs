@@ -1,5 +1,6 @@
 ﻿using HomeCinemaNgApi.Data.Repositories;
 using HomeCinemaNgApi.Entities;
+using HomeCinemaNgApi.Web.Infrastructure.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

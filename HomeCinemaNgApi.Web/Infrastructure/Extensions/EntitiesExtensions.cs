@@ -1,4 +1,5 @@
 ﻿using HomeCinemaNgApi.Entities;
+using HomeCinemaNgApi.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
