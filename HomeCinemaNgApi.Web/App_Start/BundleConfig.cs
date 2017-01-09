@@ -39,7 +39,32 @@ namespace HomeCinemaNgApi.Web
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/spa").Include(
-                    "~/Scripts/spa/app.js"
+                    "~/Scripts/spa/app.js",
+                    "~/Scripts/spa/modules/common.core.js",
+                    "~/Scripts/spa/modules/common.ui.js",
+                    "~/Scripts/spa/services/apiService.js",
+                    "~/Scripts/spa/services/notificationService.js",
+                    "~/Scripts/spa/services/membershipService.js",
+                    "~/Scripts/spa/services/fileUploadService.js",
+                    "~/Scripts/spa/layout/topBar.directive.js",
+                    "~/Scripts/spa/layout/sideBar.directive.js",
+                    "~/Scripts/spa/layout/customPager.directive.js",
+                    "~/Scripts/spa/directives/rating.directive.js",
+                    "~/Scripts/spa/directives/availableMovie.directive.js",
+                    "~/Scripts/spa/account/loginCtrl.js",
+                    "~/Scripts/spa/account/registerCtrl.js",
+                    "~/Scripts/spa/home/rootCtrl.js",
+                    "~/Scripts/spa/home/indexCtrl.js",
+                    "~/Scripts/spa/customers/customersCtrl.js",
+                    "~/Scripts/spa/customers/customersRegCtrl.js",
+                    "~/Scripts/spa/customers/customerEditCtrl.js",
+                    "~/Scripts/spa/movies/moviesCtrl.js",
+                    "~/Scripts/spa/movies/movieAddCtrl.js",
+                    "~/Scripts/spa/movies/movieDetailsCtrl.js",
+                    "~/Scripts/spa/movies/movieEditCtrl.js",
+                    "~/Scripts/spa/controllers/rentalCtrl.js",
+                    "~/Scripts/spa/rental/rentMovieCtrl.js",
+                    "~/Scripts/spa/rental/rentStatsCtrl.js"
                 ));
 
             //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
