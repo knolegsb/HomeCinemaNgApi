@@ -70,7 +70,7 @@ namespace HomeCinemaNgApi.Web.Controllers
 
                 if (!string.IsNullOrEmpty(filter))
                 {
-                    movies = _moviesRepository
+                    movies = _movieRepository
                         .FindBy(m => m.Title.ToLower()
                         .Contains(filter.ToLower().Trim()))
                         .OrderBy(m => m.Id)
