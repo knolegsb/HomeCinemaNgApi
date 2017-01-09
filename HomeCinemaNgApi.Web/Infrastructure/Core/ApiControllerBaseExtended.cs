@@ -85,6 +85,21 @@ namespace HomeCinemaNgApi.Web.Infrastructure.Core
             {
                 _rentalsRepository = _dataRepositoryFactory.GetDataRepository<Rental>(RequestMessage);
             }
+
+            if (entities.Any(e => e.FullName == typeof(Customer).FullName))
+            {
+                _customersRepository = _dataRepositoryFactory.GetDataRepository<Customer>(RequestMessage);
+            }
+
+            if (entities.Any(e => e.FullName == typeof(Stock).FullName))
+            {
+                _stocksRepository = _dataRepositoryFactory.GetDataRepository<Stock>(RequestMessage);
+            }
+
+            if (entities.Any(e => e.FullName == typeof(User).FullName))
+            {
+                _stocksRepository = _dataRepositoryFactory.GetDataRepository<Stock>(RequestMessage);
+            }
         }
     }
 }

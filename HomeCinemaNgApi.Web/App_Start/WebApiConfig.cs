@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using HomeCinemaNgApi.Web.Infrastructure.MessageHandlers;
 
 namespace HomeCinemaNgApi.Web
 {
@@ -16,6 +17,8 @@ namespace HomeCinemaNgApi.Web
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+
+            config.MessageHandlers.Add(new HomeCinemaAuthHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
