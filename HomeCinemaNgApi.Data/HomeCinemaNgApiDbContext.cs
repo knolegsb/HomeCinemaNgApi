@@ -45,5 +45,11 @@ namespace HomeCinemaNgApi.Data
             modelBuilder.Configurations.Add(new StockConfiguration());
             modelBuilder.Configurations.Add(new RentalConfiguration());
         }
+
+        //public System.Data.Entity.DbSet<HomeCinemaNgApi.Web.Models.MovieViewModel> MovieViewModels { get; set; }
+
+        //public System.Data.Entity.DbSet<HomeCinemaNgApi.Entities.Movie> Movies { get; set; }
+
+        //public System.Data.Entity.DbSet<HomeCinemaNgApi.Entities.Genre> Genres { get; set; }
     }
 }
