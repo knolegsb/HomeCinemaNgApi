@@ -26,8 +26,8 @@
             })
             .when("/customers/register", {
                 templateUrl: "scripts/spa/customers/register.html",
-                controller: "customersRegCtrl"
-                //resolve: { isAuthenticated: isAuthenticated }
+                controller: "customersRegCtrl",
+                resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/movies", {
                 templateUrl: "scripts/spa/movies/movies.html",
@@ -35,13 +35,13 @@
             })
             .when("/movies/add", {
                 templateUrl: "scripts/spa/movies/add.html",
-                controller: "movieAddCtrl"
-                //resolve: { isAuthenticated: isAuthenticated }
+                controller: "movieAddCtrl",
+                resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/movies/:id", {
                 templateUrl: "scripts/spa/movies/details.html",
-                controller: "movieDetailsCtrl"
-                //resolve: { isAuthenticated: isAuthenticated }
+                controller: "movieDetailsCtrl",
+                resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/movies/edit/:id", {
                 templateUrl: "scripts/spa/movies/edit.html",
