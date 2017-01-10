@@ -51,4 +51,4 @@
 
         loadData();
     }
-})(angular.module('homeCinema'));
+})(angular.module('homeCinemaNgApi'));
