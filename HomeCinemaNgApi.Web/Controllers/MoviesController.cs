@@ -27,6 +27,12 @@ namespace HomeCinemaNgApi.Web.Controllers
             _moviesRepository = moviesRepository;
         }
 
+        //[AllowAnonymous]
+        //public IHttpActionResult Get()
+        //{
+        //    return _moviesRepository.GetAll().ToList();
+        //}
+
         [AllowAnonymous]
         [Route("latest")]
         public HttpResponseMessage Get(HttpRequestMessage request)
